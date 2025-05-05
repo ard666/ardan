@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Formulir Pendaftaran Seminar</title>
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      margin: 40px;
+
+    }
+
+    form {
+
+      max-width: 400px;
+
+      padding: 20px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 10px;
+
+    }
+
+    label {
+
+      display: block;
+
+      margin-top: 15px;
+
+    }
+
+    input, select {
+
+      width: 100%;
+
+      padding: 8px;
+
+      margin-top: 5px;
+
+    }
+
+    button {
+
+      margin-top: 20px;
+
+      padding: 10px 20px;
+
+      background-color: #4CAF50;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 5px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h2>Formulir Pendaftaran Seminar Online</h2>
+
+  <form action="/submit" method="POST">
+
+    <label for="nama">Nama Lengkap:</label>
+
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email:</label>
+
+    <input type="email" id="email" name="email" required>
+
+    <label for="telepon">Nomor Telepon:</label>
+
+    <input type="tel" id="telepon" name="telepon" required>
+
+    <label for="sesi">Pilihan Sesi Seminar:</label>
+
+    <select id="sesi" name="sesi" required>
+
+      <option value="">-- Pilih Sesi --</option>
+
+      <option value="pagi">Sesi Pagi (09.00 - 11.00)</option>
+
+      <option value="siang">Sesi Siang (13.00 - 15.00)</option>
+
+      <option value="sore">Sesi Sore (16.00 - 18.00)</option>
+
+    </select>
+
+    <label>
+
+      <input type="checkbox" name="konfirmasi" required>
+
+      Saya bersedia mengikuti seminar
+
+    </label>
+
+    <button type="simpan_excel.php">Daftar</button>
+
+  </form>
+
+</body>
+
+</html>
